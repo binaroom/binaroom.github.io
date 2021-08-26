@@ -41,7 +41,7 @@ const routes = [
     name: 'Katalog',
     component: Katalog,
     meta: {
-      title: 'all series are here...',
+      title: 'katalog. binaroom.',
       metaTags: [
         {
           name: 'description',
@@ -55,7 +55,7 @@ const routes = [
     name: 'Contact',
     component: Contact,
     meta: {
-      title: 'contact us.',
+      title: 'contact us. binaroom.',
       metaTags: [
         {
           name: 'description',
