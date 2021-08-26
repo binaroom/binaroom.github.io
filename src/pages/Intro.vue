@@ -24,7 +24,7 @@
           <div class="col-md-4">
             <div class="card mt-4">
               <div class="card-thumb">
-                <img src="@/assets/img/gamis-pattern.jpg" class="img">
+                <img src="@/assets/img/pattern-1.png" class="img">
               </div>
               <div class="card-body">
                 <h5>Gamis Pattern</h5>
@@ -42,7 +42,7 @@
           <div class="col-md-4">
             <div class="card mt-4">
               <div class="card-thumb">
-                <img src="@/assets/img/gamis-pattern-2.jpg" class="img">
+                <img src="@/assets/img/pattern-2.png" class="img">
               </div>
               <div class="card-body">
                 <h5>Gamis Pattern 2</h5>
