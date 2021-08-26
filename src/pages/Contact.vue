@@ -63,7 +63,7 @@ export default {
 .maps {
   width: 100%;
   height: 100vh;
-  background: url('~@/assets/img/maps.png') no-repeat center center;
+  background: url('~@/assets/img/maps.jpg') no-repeat center center;
   display: block;
   background-size: cover;
 }

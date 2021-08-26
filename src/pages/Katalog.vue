@@ -9,7 +9,7 @@
               <div class="col-md-4">
                 <div class="card mt-4">
                   <div class="card-thumb">
-                    <img src="~@/assets/img/pattern-1.png" class="img">
+                    <img src="~@/assets/img/pattern-1.jpg" class="img">
                   </div>
                   <div class="card-body">
                     <h5>Gamis Pattern</h5>
@@ -27,7 +27,7 @@
               <div class="col-md-4">
                 <div class="card mt-4">
                   <div class="card-thumb">
-                    <img src="~@/assets/img/pattern-2.png" class="img">
+                    <img src="~@/assets/img/pattern-2.jpg" class="img">
                   </div>
                   <div class="card-body">
                     <h5>Gamis Pattern 2</h5>
@@ -45,7 +45,7 @@
               <div class="col-md-4">
                 <div class="card mt-4">
                   <div class="card-thumb">
-                    <img src="~@/assets/img/raya.png" class="img">
+                    <img src="~@/assets/img/raya.jpg" class="img">
                     <div class="status">Stok Habis</div>
                   </div>
                   <div class="card-body">
@@ -64,7 +64,7 @@
               <div class="col-md-4">
                 <div class="card mt-4">
                   <div class="card-thumb">
-                    <img src="~@/assets/img/black.png" class="img">
+                    <img src="~@/assets/img/black.jpg" class="img">
                     <div class="status">Stok Habis</div>
                   </div>
                   <div class="card-body">
@@ -83,7 +83,7 @@
               <div class="col-md-4">
                 <div class="card mt-4">
                   <div class="card-thumb">
-                    <img src="@/assets/img/terracotta.png" class="img">
+                    <img src="@/assets/img/terracotta.jpg" class="img">
                     <div class="status">Stok Habis</div>
                   </div>
                   <div class="card-body">
@@ -102,7 +102,7 @@
               <div class="col-md-4">
                 <div class="card mt-4">
                   <div class="card-thumb">
-                    <img src="@/assets/img/basic-1.png" class="img">
+                    <img src="@/assets/img/basic-1.jpg" class="img">
                     <div class="status">Stok Habis</div>
                   </div>
                   <div class="card-body">
@@ -121,7 +121,7 @@
               <div class="col-md-4 offset-md-4">
                 <div class="card mt-4">
                   <div class="card-thumb">
-                    <img src="@/assets/img/basic-1-dark.png" class="img">
+                    <img src="@/assets/img/basic-1-dark.jpg" class="img">
                     <div class="status">Stok Habis</div>
                   </div>
                   <div class="card-body">

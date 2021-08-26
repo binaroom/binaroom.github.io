@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="bg-intro p-5">
-              <img src="@/assets/img/HOME-INTRO-3.png" class="bg" data-aos="fade-up" data-aos-duration="900">
+              <img src="@/assets/img/HOME-INTRO-3.webp" class="bg" data-aos="fade-up" data-aos-duration="900">
               <div class="text color-1 offset-md-1">
                 <h1 class="display-1" data-aos="fade-down" data-aos-duration="1000" style="white-space:pre-line">{{ tagline1 }}<span class="gothic-bold">{{ tagline2 }}</span>.</h1>
               </div>
@@ -24,7 +24,7 @@
           <div class="col-md-4">
             <div class="card mt-4">
               <div class="card-thumb">
-                <img src="@/assets/img/pattern-1.png" class="img">
+                <img src="@/assets/img/pattern-1.jpg" class="img">
               </div>
               <div class="card-body">
                 <h5>Gamis Pattern</h5>
@@ -42,7 +42,7 @@
           <div class="col-md-4">
             <div class="card mt-4">
               <div class="card-thumb">
-                <img src="@/assets/img/pattern-2.png" class="img">
+                <img src="@/assets/img/pattern-2.jpg" class="img">
               </div>
               <div class="card-body">
                 <h5>Gamis Pattern 2</h5>
