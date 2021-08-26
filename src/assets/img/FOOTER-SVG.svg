@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1461px" height="199px" viewBox="0 0 1461 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <defs>
+        <polygon id="path-1" points="0 4.00304878e-14 1440 93.7496816 1440 187.76193 0 187.499363"></polygon>
+        <filter x="-0.7%" y="-11.5%" width="102.9%" height="117.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="20" dy="-10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.847058824   0 0 0 0 0.847058824   0 0 0 0 0.847058824  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-3" transform="translate(0.000000, -825.000000)">
+            <g id="Group-2" transform="translate(0.000000, 836.238070)">
+                <g id="Rectangle-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#B5CAC4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="FOOTER" transform="translate(573.000000, 119.761930)" fill="#FFFFFF">
+                    <text id="©-2021.-Made-with-by" font-family="CenturyGothic, Century Gothic" font-size="17" font-weight="normal">
+                        <tspan x="0" y="17">© 2021. Made with </tspan>
+                        <tspan x="157.507324" y="17" font-family="Monaco">  </tspan>
+                        <tspan x="177.910645" y="17"> by binaroom.</tspan>
+                    </text>
+                    <g id="heart" transform="translate(155.000000, 2.000000)" fill-rule="nonzero">
+                        <path d="M18.9616619,1.50428135 C16.7140488,-0.788980256 13.3713397,-0.376487805 11.3082935,2.17212627 L10.5003012,3.16898302 L9.69230894,2.17212627 C7.63336417,-0.376487805 4.28655356,-0.788980256 2.03894055,1.50428135 C-0.536791143,4.13637603 -0.672140102,8.86039672 1.63289368,11.7134695 L9.56926443,21.5248971 C10.0819499,22.1583676 10.914551,22.1583676 11.4272365,21.5248971 L19.3636072,11.7134695 C21.6727425,8.86039672 21.5373936,4.13637603 18.9616619,1.50428135 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

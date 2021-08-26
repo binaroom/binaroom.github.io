@@ -1,0 +1,148 @@
+/* 
+ * style.css
+ * binaroom.id
+ * August 9, 2021
+ */
+
+body {
+  color: #5C5C5C;
+  font-family: 'Century Gothic';
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('../font/Lobster.ttf');
+}
+
+@font-face {
+  font-family: 'Gothic';
+  src: url('../font/Gothic.ttf');
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../font/CenturyGothic.ttf');
+}
+
+/* FONT */
+
+.lobster {
+  font-family: 'Lobster';
+}
+
+.gothic {
+  font-family: 'Century Gothic';
+}
+
+.gothic-bold {
+  font-family: 'Gothic';
+}
+
+/* COLORS */
+
+.color-1 {
+  color: #5C5C5C;
+}
+
+.color-2 {
+  color: #d1d1d1;
+}
+
+@media (min-width: 480px) {
+  .navigation {
+    font-size: 17px;
+  }
+  .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h1.display-1 {
+    font-size: 50px;
+  }
+}
+
+.text {
+  position: absolute;
+  top: 35%
+}
+
+h1.display-1 {
+  font-size: 7vh;
+}
+
+
+/* NProgress custome style */
+#nprogress .bar {
+  background: #d5ffed !important;
+  height: 3px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #787878, 0 0 5px #787878;
+}
+
+#nprogress .spinner {
+  top: 10px;
+  left: 10px;
+}
+
+#nprogress .spinner .spinner-icon {
+  border-top-color: #d5ffed;
+  border-left-color: #d5ffed;
+}
+
+
+/* BUTTONS */
+.btn {
+  border-radius: 5px;
+}
+.btn.btn-orange {
+  color: #fff;
+  border: none;
+  background-color: #F1582B;
+  box-shadow: 4px 4px 0 #d1d1d1;
+  transition: all .2s ease-in-out;
+}
+.btn.btn-orange:hover {
+  transform: scale(.95);
+  box-shadow: 2px 2px 0 #d1d1d1;
+}
+.btn.disabled, .btn.disabled:hover {
+  transition: none;
+  transform: none;
+  box-shadow: none;
+}
+
+
+/* CARD */
+.card {
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  box-shadow: 5px 5px 0 #d1d1d1;
+  transition: all .2s ease-in-out;
+}
+.card:hover {
+  transform: translate(0, -1%)
+}
+
+
+/* TITLE H1 */
+h1 {
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+h1:before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 4px solid #515151;
+}
