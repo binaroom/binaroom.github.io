@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="bg-intro p-5">
-              <img src="@/assets/img/HOME-INTRO-3.webp" class="bg" data-aos="fade-up" data-aos-duration="900">
+              <img src="@/assets/img/HOME-INTRO-3.png" class="bg" data-aos="fade-up" data-aos-duration="900">
               <div class="text color-1 offset-md-1">
                 <h1 class="display-1" data-aos="fade-down" data-aos-duration="1000" style="white-space:pre-line">{{ tagline1 }}<span class="gothic-bold">{{ tagline2 }}</span>.</h1>
               </div>

@@ -5,7 +5,7 @@
         <div class="col-md-12">
           <nav class="navbar navbar-expand-lg navbar-light">
             <router-link :to="{name: navs[0].link}" class="navbar-brand">
-              <img src="@/assets/img/logo.webp" class="logo"/>
+              <img src="@/assets/img/logo.png" class="logo"/>
             </router-link>
             <button
               class="navbar-toggler"
