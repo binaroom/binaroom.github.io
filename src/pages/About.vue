@@ -21,7 +21,7 @@
 
             <h1>logo.</h1>
             <div class="mb-3 mt-3">
-              <img src="@/assets/img/logo.png" alt="logo" class="logo" data-aos="zoom-in" data-aos-duration="800" />
+              <img src="@/assets/img/logo.webp" alt="logo" class="logo" data-aos="zoom-in" data-aos-duration="800" />
             </div>
             <div class="mb-3">
               <img src="@/assets/img/logo2.jpeg" alt="logo" class="logo2" data-aos="zoom-in" data-aos-duration="800" />
