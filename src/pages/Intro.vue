@@ -29,11 +29,11 @@
               <div class="card-body">
                 <h5>Gamis Pattern</h5>
                 <div class="rating text-warning mb-3">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
                 </div>
                 <a class="btn btn-orange" href="https://shopee.co.id/Gamis-Basic-Sarah-Dress-Gamis-vintage-i.363344204.8694503403" target="_blank">Pesan di Shopee</a>
               </div>
