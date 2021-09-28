@@ -12,7 +12,7 @@
                     <img src="@/assets/img/sarah.png" class="img">
                   </div>
                   <div class="card-body">
-                    <h5>Gamis Pattern</h5>
+                    <h5>Sarah</h5>
                     <div class="rating text-warning mb-3">
                       <i class="far fa-star"></i>
                       <i class="far fa-star"></i>
