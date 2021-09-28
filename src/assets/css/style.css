@@ -146,3 +146,17 @@ h1:before {
   left: 0;
   border-bottom: 4px solid #515151;
 }
+
+/* PRODUCTS */
+.card-thumb {
+  position: relative;
+}
+.card-thumb .status {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  background: #515151;
+  color: #fff;
+}

@@ -9,7 +9,7 @@
               <div class="col-md-4">
                 <div class="card mt-4">
                   <div class="card-thumb">
-                    <img src="~@/assets/img/pattern-1.jpg" class="img">
+                    <img src="@/assets/img/sarah.png" class="img">
                   </div>
                   <div class="card-body">
                     <h5>Gamis Pattern</h5>
@@ -20,7 +20,26 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-half-alt"></i>
                     </div>
-                    <a class="btn btn-orange" href="https://shopee.co.id/GAMIS-SIMPLE-PATTERN-SERIES-1-i.363344204.5197513137" target="_blank">Pesan di Shopee</a>
+                    <a class="btn btn-orange" href="https://shopee.co.id/Gamis-Basic-Sarah-Dress-Gamis-vintage-i.363344204.8694503403" target="_blank">Pesan di Shopee</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mt-4">
+                  <div class="card-thumb">
+                    <img src="~@/assets/img/pattern-1.jpg" class="img">
+                    <div class="status">Stok Habis</div>
+                  </div>
+                  <div class="card-body">
+                    <h5>Gamis Pattern</h5>
+                    <div class="rating text-warning mb-3">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-alt"></i>
+                    </div>
+                    <a class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
                   </div>
                 </div>
               </div>
@@ -28,6 +47,7 @@
                 <div class="card mt-4">
                   <div class="card-thumb">
                     <img src="~@/assets/img/pattern-2.jpg" class="img">
+                    <div class="status">Stok Habis</div>
                   </div>
                   <div class="card-body">
                     <h5>Gamis Pattern 2</h5>
@@ -38,7 +58,7 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-half-alt"></i>
                     </div>
-                    <a class="btn btn-orange" href="https://shopee.co.id/GAMIS-SIMPLE-PATTERN-SERIES-1-i.363344204.5197513137" target="_blank">Pesan di Shopee</a>
+                    <a class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
                   </div>
                 </div>
               </div>
@@ -118,7 +138,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 offset-md-4">
+              <div class="col-md-4">
                 <div class="card mt-4">
                   <div class="card-thumb">
                     <img src="@/assets/img/basic-1-dark.jpg" class="img">
@@ -156,17 +176,5 @@
   margin: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-.card-thumb {
-  position: relative;
-}
-.card-thumb .status {
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-  padding: 10px;
-  background: #515151;
-  color: #fff;
 }
 </style>
