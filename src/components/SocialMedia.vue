@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="p-2">
-            <a href="https://api.whatsapp.com/send?phone=6282117059260" target="_blank" class="text-white"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=6282119908623" target="_blank" class="text-white"><i class="fab fa-whatsapp"></i></a>
             <a href="mailto:binaroom.id@gmail.com" class="ml-2 text-white" target="_blank"><i class="fa fa-envelope"></i></a>
             <a href="https://instagram.com/binaroom.id" class="ml-2 text-white" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://twitter.com/binaroomID" class="ml-2 text-white" target="_blank"><i class="fab fa-twitter"></i></a>

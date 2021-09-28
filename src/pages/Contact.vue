@@ -16,7 +16,7 @@
                 <a href="https://instagram.com/binaroom.id" class="ml-3 text-ig" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="https://twitter.com/binaroomID" class="ml-3 text-twitter" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="https://www.youtube.com/channel/UC1kCnoTTQtYXmotd8nT1u3Q" target="_blank" class="ml-3 text-yt"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=6282117059260" target="_blank" class="ml-3 text-wa"><i class="fab fa-whatsapp fa-2x"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=6282119908623" target="_blank" class="ml-3 text-wa"><i class="fab fa-whatsapp fa-2x"></i></a>
               </div>
             </div>
           </div>
