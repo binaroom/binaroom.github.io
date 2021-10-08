@@ -7,7 +7,7 @@
             <h1 data-aos="fade-up">katalog.</h1>
             <div class="row" data-aos="fade-up" data-aos-duration="600">
               <div class="col-md-4">
-                <div class="card mt-4">
+                <div class="card mt-5">
                   <div class="card-thumb">
                     <img src="@/assets/img/sarah.png" class="img">
                   </div>
@@ -25,7 +25,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mt-4">
+                <div class="card mt-5">
                   <div class="card-thumb">
                     <img src="~@/assets/img/pattern-1.jpg" class="img">
                     <div class="status">Stok Habis</div>
@@ -44,7 +44,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mt-4">
+                <div class="card mt-5">
                   <div class="card-thumb">
                     <img src="~@/assets/img/pattern-2.jpg" class="img">
                     <div class="status">Stok Habis</div>
@@ -63,7 +63,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mt-4">
+                <div class="card mt-5">
                   <div class="card-thumb">
                     <img src="~@/assets/img/raya.jpg" class="img">
                     <div class="status">Stok Habis</div>
@@ -82,7 +82,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mt-4">
+                <div class="card mt-5">
                   <div class="card-thumb">
                     <img src="~@/assets/img/black.jpg" class="img">
                     <div class="status">Stok Habis</div>
@@ -101,7 +101,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mt-4">
+                <div class="card mt-5">
                   <div class="card-thumb">
                     <img src="@/assets/img/terracotta.jpg" class="img">
                     <div class="status">Stok Habis</div>
@@ -120,7 +120,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mt-4">
+                <div class="card mt-5">
                   <div class="card-thumb">
                     <img src="@/assets/img/basic-1.jpg" class="img">
                     <div class="status">Stok Habis</div>
@@ -139,7 +139,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mt-4">
+                <div class="card mt-5">
                   <div class="card-thumb">
                     <img src="@/assets/img/basic-1-dark.jpg" class="img">
                     <div class="status">Stok Habis</div>
