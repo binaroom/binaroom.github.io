@@ -104,7 +104,7 @@ export default {
 }
 
 .intro .bg-intro {
-  display: inline-block;
+  display: block;
   position: relative;
 }
 
