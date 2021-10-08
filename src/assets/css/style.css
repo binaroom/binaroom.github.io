@@ -4,14 +4,18 @@
  * August 9, 2021
  */
 
-body {
+html, body {
+  width: 100%;
+  height: 100%;
   color: #5C5C5C;
   font-family: 'Century Gothic';
   margin: 0;
   padding: 0;
 }
-html {
-  height: 100%;
+
+#app {
+  margin: 0;
+  width: 100%;
 }
 
 @font-face {
