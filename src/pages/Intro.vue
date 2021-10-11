@@ -42,11 +42,11 @@
           <div class="col-md-4">
             <div class="card mt-4">
               <div class="card-thumb">
-                <img src="@/assets/img/pattern-1.jpg" class="img">
+                <img src="@/assets/img/raya.jpg" class="img">
                 <div class="status">Stok Habis</div>
               </div>
               <div class="card-body">
-                <h5>Gamis Pattern</h5>
+                <h5>Raya</h5>
                 <div class="rating text-warning mb-3">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -61,11 +61,11 @@
           <div class="col-md-4">
             <div class="card mt-4">
               <div class="card-thumb">
-                <img src="@/assets/img/pattern-2.jpg" class="img">
+                <img src="@/assets/img/black.jpg" class="img">
                 <div class="status">Stok Habis</div>
               </div>
               <div class="card-body">
-                <h5>Gamis Pattern 2</h5>
+                <h5>Black Series 1</h5>
                 <div class="rating text-warning mb-3">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
