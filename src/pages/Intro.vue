@@ -21,25 +21,30 @@
           <div class="col-md-4"><h1 class="h3" data-aos="fade-up">new arrival.</h1></div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-duration="600">
-          <div class="col-md-4">
-            <div class="card mt-4">
+          <div class="col-md-4" v-for="post in posts" :key="post.id">
+            <div class="card mt-4" v-if="posts != ''">
               <div class="card-thumb">
-                <img src="@/assets/img/sarah.png" class="img">
+                <img :src="post.jetpack_featured_media_url" class="img">
+                <div class="status" v-if="!post.categories[1]">Stok Habis</div>
               </div>
               <div class="card-body">
-                <h5>Sarah</h5>
+                <h5>{{ post.title.rendered }}</h5>
                 <div class="rating text-warning mb-3">
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-alt"></i>
                 </div>
-                <a class="btn btn-orange" href="https://shopee.co.id/Gamis-Basic-Sarah-Dress-Gamis-vintage-i.363344204.8694503403" target="_blank">Pesan di Shopee</a>
+                <a v-if="!post.categories[1]" class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
+                <a v-else  class="btn btn-orange" href="https://shopee.co.id/binaroom.id" target="_blank">Pesan di Shopee</a>
               </div>
             </div>
+            <div class="mt-4" v-else>
+              <em>Loading...</em>
+            </div>
           </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-4">
             <div class="card mt-4">
               <div class="card-thumb">
                 <img src="@/assets/img/raya.jpg" class="img">
@@ -76,7 +81,7 @@
                 <a class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
               </div>
             </div>
-          </div>
+          </div> -->
           
         </div>
       </div>
@@ -91,7 +96,23 @@ export default {
       tagline1: `your
                 favorite
                 `,
-      tagline2: `clothing`
+      tagline2: `clothing`,
+      posts: '',
+    }
+  },
+
+  mounted() {
+    this.getPosts()
+  },
+
+  methods: {
+    async getPosts() {
+      await fetch(`https://public-api.wordpress.com/wp/v2/sites/binaroom.wordpress.com/posts`)
+      .then(res => res.json())
+      .then(data => {
+        this.posts = data
+        this.posts.splice(3)
+      })
     }
   }
 }
