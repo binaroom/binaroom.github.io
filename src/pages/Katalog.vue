@@ -6,6 +6,9 @@
           <div class="mt-5 mb-5">
             <h1 data-aos="fade-up">katalog.</h1>
             <div class="row" data-aos="fade-up" data-aos-duration="600">
+              <div class="col-md-12 mt-3 text-center" v-if="loading">
+                <sync-loader color="#7CA297" />
+              </div>
               <div class="col-md-4" v-for="post in posts" :key="post.id">
                 <div class="card mt-5" v-if="posts != ''">
                   <div class="card-thumb">
@@ -134,10 +137,17 @@
 </template>
 
 <script>
+import { SyncLoader } from '@saeris/vue-spinners'
+
 export default {
+  components: {
+    SyncLoader
+  },
+
   data() {
     return {
-      posts: ''
+      posts: '',
+      loading: true,
     }
   },
 
@@ -149,7 +159,10 @@ export default {
     async getPosts() {
       await fetch(`https://public-api.wordpress.com/wp/v2/sites/binaroom.wordpress.com/posts`)
         .then(res => res.json())
-        .then(data => this.posts = data)
+        .then(data => {
+          this.posts = data
+          this.loading = false
+        })
     }
   }
 }
