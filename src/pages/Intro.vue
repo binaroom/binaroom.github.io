@@ -21,8 +21,11 @@
           <div class="col-md-4"><h1 class="h3" data-aos="fade-up">new arrival.</h1></div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-duration="600">
+          <div class="col-md-12 mt-3 text-center" v-if="loading">
+            <sync-loader color="#7CA297" />
+          </div>
           <div class="col-md-4" v-for="post in posts" :key="post.id">
-            <div class="card mt-4" v-if="posts != ''">
+            <div class="card mt-4">
               <div class="card-thumb">
                 <img :src="post.jetpack_featured_media_url" class="img">
                 <div class="status" v-if="!post.categories[1]">Stok Habis</div>
@@ -39,9 +42,6 @@
                 <a v-if="!post.categories[1]" class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
                 <a v-else  class="btn btn-orange" href="https://shopee.co.id/binaroom.id" target="_blank">Pesan di Shopee</a>
               </div>
-            </div>
-            <div class="mt-4" v-else>
-              <em>Loading...</em>
             </div>
           </div>
           <!-- <div class="col-md-4">
@@ -90,7 +90,12 @@
 </template>
 
 <script>
+import {SyncLoader} from '@saeris/vue-spinners'
 export default {
+  components: {
+    SyncLoader
+  },
+
   data() {
     return {
       tagline1: `your
@@ -98,6 +103,7 @@ export default {
                 `,
       tagline2: `clothing`,
       posts: '',
+      loading: true,
     }
   },
 
@@ -112,6 +118,7 @@ export default {
       .then(data => {
         this.posts = data
         this.posts.splice(3)
+        this.loading = false
       })
     }
   }

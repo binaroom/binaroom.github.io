@@ -16,11 +16,14 @@ import 'aos/dist/aos.css'
 
 import NProgress from 'vue-nprogress'
 
+import {VueSpinners} from '@saeris/vue-spinners'
+
 Vue.config.productionTip = false
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(NProgress)
+Vue.use(VueSpinners)
 
 const nprogress = new NProgress()
 nprogress.configure({ showSpinner: true });
