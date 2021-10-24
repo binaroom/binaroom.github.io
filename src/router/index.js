@@ -4,7 +4,7 @@ import Intro from '../pages/Intro'
 import About from '../pages/About'
 import Katalog from '../pages/Katalog'
 import Contact from '../pages/Contact'
-import Video from '../pages/Video'
+// import Video from '../pages/Video'
 
 Vue.use(VueRouter)
 
@@ -51,20 +51,20 @@ const routes = [
       ]
     }
   },
-  {
-    path: '/video',
-    name: 'Video',
-    component: Video,
-    meta: {
-      title: 'video. binaroom.',
-      metaTags: [
-        {
-          name: 'description',
-          content: 'daily activities...'
-        }
-      ]
-    }
-  },
+  // {
+  //   path: '/video',
+  //   name: 'Video',
+  //   component: Video,
+  //   meta: {
+  //     title: 'video. binaroom.',
+  //     metaTags: [
+  //       {
+  //         name: 'description',
+  //         content: 'daily activities...'
+  //       }
+  //     ]
+  //   }
+  // },
   {
     path: '/contact',
     name: 'Contact',
