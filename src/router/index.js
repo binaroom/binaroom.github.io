@@ -4,6 +4,7 @@ import Intro from '../pages/Intro'
 import About from '../pages/About'
 import Katalog from '../pages/Katalog'
 import Contact from '../pages/Contact'
+import Video from '../pages/Video'
 
 Vue.use(VueRouter)
 
@@ -51,6 +52,20 @@ const routes = [
     }
   },
   {
+    path: '/video',
+    name: 'Video',
+    component: Video,
+    meta: {
+      title: 'video. binaroom.',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'daily activities...'
+        }
+      ]
+    }
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: Contact,
@@ -72,6 +87,13 @@ const router = new VueRouter({
 
 // This callback runs before every route change, including on page load.
 router.beforeEach((to, from, next) => {
+  // smooth scroll to top when page change dengan menggunakan .scroll
+  // .scroll(posisi x, posisi y, behavior)
+  window.scroll({
+    top: to,
+    left: 0,
+    behavior: 'smooth'
+  })
   // This goes through the matched routes from last to first, finding the closest route with a title.
   // e.g., if we have `/some/deep/nested/route` and `/some`, `/deep`, and `/nested` have titles,
   // `/nested`'s will be chosen.
@@ -83,9 +105,9 @@ router.beforeEach((to, from, next) => {
   const previousNearestWithMeta = from.matched.slice().reverse().find(r => r.meta && r.meta.metaTags);
 
   // If a route with a title was found, set the document (page) title to that value.
-  if(nearestWithTitle) {
+  if (nearestWithTitle) {
     document.title = nearestWithTitle.meta.title;
-  } else if(previousNearestWithMeta) {
+  } else if (previousNearestWithMeta) {
     document.title = previousNearestWithMeta.meta.title;
   }
 
@@ -93,7 +115,7 @@ router.beforeEach((to, from, next) => {
   Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => el.parentNode.removeChild(el));
 
   // Skip rendering meta tags if there are none.
-  if(!nearestWithMeta) return next();
+  if (!nearestWithMeta) return next();
 
   // Turn the meta tag definitions into actual elements in the head.
   nearestWithMeta.meta.metaTags.map(tagDef => {
@@ -108,8 +130,8 @@ router.beforeEach((to, from, next) => {
 
     return tag;
   })
-  // Add the meta tags to the document head.
-  .forEach(tag => document.head.appendChild(tag));
+    // Add the meta tags to the document head.
+    .forEach(tag => document.head.appendChild(tag));
 
   next();
 });
