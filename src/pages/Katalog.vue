@@ -12,11 +12,11 @@
               <div class="col-md-4" v-for="post in posts" :key="post.id">
                 <div class="card mt-5" v-if="posts != ''">
                   <div class="card-thumb">
-                    <img :src="post.jetpack_featured_media_url" class="img">
-                    <div class="status" v-if="!post.categories[1]">Stok Habis</div>
+                    <img :src="post.image" class="img">
+                    <div class="status" v-if="post.stocks < 1">Stok Habis</div>
                   </div>
                   <div class="card-body">
-                    <h5>{{ post.title.rendered }}</h5>
+                    <h5>{{ post.name }}</h5>
                     <div class="rating text-warning mb-3">
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
@@ -24,7 +24,7 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-half-alt"></i>
                     </div>
-                    <a v-if="!post.categories[1]" class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
+                    <a v-if="post.stocks < 1" class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
                     <a v-else class="btn btn-orange" href="https://shopee.co.id/binaroom.id" target="_blank">Pesan di Shopee</a>
                     <!-- <a class="btn btn-orange" href="https://shopee.co.id/Gamis-Basic-Sarah-Dress-Gamis-vintage-i.363344204.8694503403" target="_blank">Pesan di Shopee</a> -->
                   </div>
@@ -157,12 +157,23 @@ export default {
 
   methods: {
     async getPosts() {
-      await fetch(`https://public-api.wordpress.com/wp/v2/sites/binaroom.wordpress.com/posts`)
-        .then(res => res.json())
-        .then(data => {
-          this.posts = data
-          this.loading = false
-        })
+      let { data, error } = await this.$supabase
+        .from('products')
+        .select(`
+          id, created_at, name,
+          category(nama),
+          price, image, stocks, published, isReady
+        `)
+        .order('created_at', { ascending: false })
+
+      if (data) {
+        this.posts = data
+        this.loading = false
+      }
+
+      if (error) {
+        console.error(error)
+      }
     }
   }
 }
