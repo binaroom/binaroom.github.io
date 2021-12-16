@@ -44,44 +44,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-4">
-            <div class="card mt-4">
-              <div class="card-thumb">
-                <img src="@/assets/img/raya.jpg" class="img">
-                <div class="status">Stok Habis</div>
-              </div>
-              <div class="card-body">
-                <h5>Raya</h5>
-                <div class="rating text-warning mb-3">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-alt"></i>
-                </div>
-                <a class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mt-4">
-              <div class="card-thumb">
-                <img src="@/assets/img/black.jpg" class="img">
-                <div class="status">Stok Habis</div>
-              </div>
-              <div class="card-body">
-                <h5>Black Series 1</h5>
-                <div class="rating text-warning mb-3">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-alt"></i>
-                </div>
-                <a class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
-              </div>
-            </div>
-          </div> -->
           
         </div>
       </div>
@@ -120,6 +82,7 @@ export default {
           category(nama),
           price, image, stocks, published, isReady
         `)
+        .eq('published', true)
         .order('created_at', { ascending: false })
 
       if (data) {
