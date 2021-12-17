@@ -16,16 +16,17 @@
                     <div class="status" v-if="post.stocks < 1">Stok Habis</div>
                   </div>
                   <div class="card-body">
-                    <h5>{{ post.name }}</h5>
-                    <div class="rating text-warning mb-3">
+                    <h4 class="title">{{ post.name }}</h4>
+                    <!-- <div class="rating text-warning mb-3">
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-half-alt"></i>
-                    </div>
+                    </div> -->
+                    <h5>Rp{{ post.price }}</h5>
                     <a v-if="post.stocks < 1" class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
-                    <a v-else class="btn btn-orange" href="https://shopee.co.id/binaroom.id" target="_blank">Pesan di Shopee</a>
+                    <a v-else class="btn btn-orange" :href="post.exlink" target="_blank">Pesan di Shopee</a>
                     <!-- <a class="btn btn-orange" href="https://shopee.co.id/Gamis-Basic-Sarah-Dress-Gamis-vintage-i.363344204.8694503403" target="_blank">Pesan di Shopee</a> -->
                   </div>
                 </div>
@@ -67,7 +68,7 @@ export default {
         .select(`
           id, created_at, name,
           category(nama),
-          price, image, stocks, published, isReady
+          price, image, stocks, published, isReady, exlink
         `)
         .eq('published', true)
         .order('created_at', { ascending: false })
@@ -96,5 +97,8 @@ export default {
   margin: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+h4 {
+  font-weight: bold;
 }
 </style>
