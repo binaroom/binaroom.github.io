@@ -122,6 +122,17 @@ h1.display-1 {
   transform: none;
   box-shadow: none;
 }
+.btn.btn-green {
+  color: #fff;
+  border: none;
+  background-color: #7CA297;
+  box-shadow: 4px 4px 0 #d1d1d1;
+  transition: all .2s ease-in-out;
+}
+.btn.btn-green:hover {
+  transform: scale(.95);
+  box-shadow: 2px 2px 0 #d1d1d1;
+}
 
 
 /* CARD */
