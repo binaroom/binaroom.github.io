@@ -40,8 +40,8 @@
                   <i class="fa fa-star-half-alt"></i>
                 </div> -->
                 <h5>Rp{{ post.price }}</h5>
-                <a v-if="post.stocks < 1" class="btn btn-orange disabled" target="_blank">Pesan di Shopee</a>
-                <a v-else class="btn btn-orange" :href="post.exlink" target="_blank">Pesan di Shopee</a>
+                <a v-if="post.stocks < 1" class="btn btn-green disabled" target="_blank">Pesan di Shopee</a>
+                <a v-else class="btn btn-green" :href="post.exlink" target="_blank">Pesan di Shopee</a>
               </div>
             </div>
           </div>
@@ -54,6 +54,8 @@
 
 <script>
 import {SyncLoader} from '@saeris/vue-spinners'
+import filterStock from '../functions/filterStock'
+
 export default {
   components: {
     SyncLoader
@@ -87,7 +89,7 @@ export default {
         .order('created_at', { ascending: false })
 
       if (data) {
-        this.posts = data
+        this.posts = filterStock(data);
         this.posts.splice(3)
         this.loading = false
       }
@@ -95,7 +97,7 @@ export default {
       if (error) {
         console.error(error)
       }
-    }
+    },
   }
 }
 </script>
