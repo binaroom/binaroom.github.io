@@ -10,28 +10,18 @@
                 <sync-loader color="#7CA297" />
               </div>
               <div class="col-md-4" v-for="post in posts" :key="post.id">
-                <div class="card mt-5" v-if="posts != ''">
+                <div class="card mt-5">
                   <div class="card-thumb">
                     <img :src="post.image" class="img">
                     <div class="status" v-if="post.stocks < 1">Stok Habis</div>
                   </div>
                   <div class="card-body">
                     <h4 class="title">{{ post.name }}</h4>
-                    <!-- <div class="rating text-warning mb-3">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half-alt"></i>
-                    </div> -->
                     <h5>Rp{{ post.price }}</h5>
                     <a v-if="post.stocks < 1" class="btn btn-green disabled" target="_blank">Pesan di Shopee</a>
                     <a v-else class="btn btn-green" :href="post.exlink" target="_blank">Pesan di Shopee</a>
                     <!-- <a class="btn btn-orange" href="https://shopee.co.id/Gamis-Basic-Sarah-Dress-Gamis-vintage-i.363344204.8694503403" target="_blank">Pesan di Shopee</a> -->
                   </div>
-                </div>
-                <div class="mt-4" v-else>
-                  <em>Loading...</em>
                 </div>
               </div>
             </div>
