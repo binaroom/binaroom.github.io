@@ -40,8 +40,8 @@
                   <i class="fa fa-star-half-alt"></i>
                 </div> -->
                 <h5>Rp{{ post.price }}</h5>
-                <a v-if="post.stocks < 1" class="btn btn-green disabled" target="_blank">Pesan di Shopee</a>
-                <a v-else class="btn btn-green" :href="post.exlink" target="_blank">Pesan di Shopee</a>
+                <a v-if="post.stocks < 1" class="btn btn-green btn-block btn-lg disabled" target="_blank">Pesan di Shopee</a>
+                <a v-else class="btn btn-green btn-block btn-lg" :href="post.exlink" target="_blank">Pesan di Shopee</a>
               </div>
             </div>
           </div>

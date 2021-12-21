@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Intro from '../pages/Intro'
 import About from '../pages/About'
-import Katalog from '../pages/Katalog'
+import Catalog from '../pages/Catalog'
 import Contact from '../pages/Contact'
 // import Video from '../pages/Video'
 
@@ -38,11 +38,11 @@ const routes = [
     }
   },
   {
-    path: '/katalog',
-    name: 'Katalog',
-    component: Katalog,
+    path: '/catalog',
+    name: 'Catalog',
+    component: Catalog,
     meta: {
-      title: 'katalog. binaroom.',
+      title: 'catalog. binaroom.',
       metaTags: [
         {
           name: 'description',

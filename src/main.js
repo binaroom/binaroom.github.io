@@ -33,7 +33,7 @@ Vue.use(NProgress)
 Vue.use(VueSpinners)
 
 const nprogress = new NProgress()
-nprogress.configure({ showSpinner: true });
+nprogress.configure({ showSpinner: false });
 
 AOS.init()
 

@@ -43,8 +43,8 @@ export default {
           link: 'Intro'
         },        
         {
-          name: 'Katalog',
-          link: 'Katalog'
+          name: 'Catalog',
+          link: 'Catalog'
         },        
         {
           name: 'Contact',
