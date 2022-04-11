@@ -4,10 +4,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="bg-intro p-5">
-              <img src="@/assets/img/HOME-INTRO-3.png" class="bg" data-aos="fade-up" data-aos-duration="900">
-              <div class="text color-1 offset-md-1">
-                <h1 class="display-1" data-aos="fade-down" data-aos-duration="1000" style="white-space:pre-line">{{ tagline1 }}<span class="gothic-bold">{{ tagline2 }}</span>.</h1>
+            <div class="bg-intro">
+              <img src="@/assets/img/INTRO-2.png" class="bg" data-aos="fade-down" data-aos-duration="900">
+              <div class="text color-1 offset-md-1 lobster">
+                <h1 data-aos="fade-up" data-aos-duration="1000" style="white-space:pre-line">{{ tagline1 }}<span class="lobster">{{ tagline2 }}</span>.</h1>
               </div>
             </div>
           </div>
@@ -18,7 +18,7 @@
     <section class="series">
       <div class="container">
         <div class="row">
-          <div class="col-md-4"><h1 class="h3" data-aos="fade-up">new arrival.</h1></div>
+          <div class="col-md-4"><h3 data-aos="fade-up">new arrival.</h3></div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-duration="600">
           <div class="col-md-12 mt-3 text-center" v-if="loading">
@@ -63,10 +63,10 @@ export default {
 
   data() {
     return {
-      tagline1: `your
-                favorite
+      tagline1: `Marhaban 
+                Ya
                 `,
-      tagline2: `clothing`,
+      tagline2: `Ramadhan`,
       posts: '',
       loading: true,
     }
@@ -131,5 +131,9 @@ export default {
 
 h4 {
   font-weight: bold;
+}
+
+h1 {
+  font-size: 4vmax;
 }
 </style>
