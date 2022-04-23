@@ -64,7 +64,7 @@ export default {
   data() {
     return {
       tagline1: `Marhaban 
-                Ya
+                Yaa
                 `,
       tagline2: `Ramadhan`,
       posts: '',
