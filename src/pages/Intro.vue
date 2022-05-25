@@ -63,9 +63,9 @@ export default {
 
   data() {
     return {
-      tagline1: `Eid Mubarak
+      tagline1: `Your Favorite
                 `,
-      tagline2: `1443 H`,
+      tagline2: `Clothing`,
       posts: '',
       loading: true,
     }
