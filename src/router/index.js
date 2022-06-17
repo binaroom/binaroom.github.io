@@ -4,6 +4,7 @@ import Intro from '../pages/Intro'
 import About from '../pages/About'
 import Catalog from '../pages/Catalog'
 import Contact from '../pages/Contact'
+import Size from '../pages/Size'
 // import Video from '../pages/Video'
 
 Vue.use(VueRouter)
@@ -43,6 +44,20 @@ const routes = [
     component: Catalog,
     meta: {
       title: 'catalog. binaroom.',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'made with love.'
+        }
+      ]
+    }
+  },
+  {
+    path: '/size',
+    name: 'Size',
+    component: Size,
+    meta: {
+      title: 'size chart. binaroom.',
       metaTags: [
         {
           name: 'description',
