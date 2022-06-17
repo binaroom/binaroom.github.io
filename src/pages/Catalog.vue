@@ -5,9 +5,12 @@
         <div class="col-md-12">
           <div class="mt-5 mb-5">
             <h1 data-aos="fade-up">catalog.</h1>
+            <div class="alert alert-success mt-3 mb-4" data-aos="fade-up" data-aos-duration="700">
+              Lihat ukuran yang pas buat kamu <router-link to="/size">Disini</router-link>.
+            </div>
             <div class="row" data-aos="fade-up" data-aos-duration="600">
               <div class="col-md-4" v-for="post in posts" :key="post.id">
-                <div class="card mt-5">
+                <div class="card mb-5">
                   <div class="card-thumb">
                     <img :src="post.image" class="img">
                     <div class="status" v-if="post.stocks < 1">Stok Habis</div>
@@ -140,5 +143,9 @@ export default {
 }
 h4 {
   font-weight: bold;
+}
+a, a:hover {
+  color: inherit;
+  text-decoration: underline;
 }
 </style>
