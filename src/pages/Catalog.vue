@@ -6,7 +6,7 @@
           <div class="mt-5 mb-5">
             <h1 data-aos="fade-up">catalog.</h1>
             <div class="alert alert-success mt-3 mb-4" data-aos="fade-up" data-aos-duration="700">
-              Lihat ukuran yang pas buat kamu <router-link to="/size">Disini</router-link>.
+              Lihat ukuran yang pas buat kamu <router-link to="/size" class="link">Disini</router-link>.
             </div>
             <div class="row" data-aos="fade-up" data-aos-duration="600">
               <div class="col-md-4" v-for="post in posts" :key="post.id">
@@ -144,7 +144,7 @@ export default {
 h4 {
   font-weight: bold;
 }
-a, a:hover {
+.link, .link:hover {
   color: inherit;
   text-decoration: underline;
 }
